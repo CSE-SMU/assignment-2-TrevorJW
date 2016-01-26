@@ -1,0 +1,118 @@
+.face.center{
+	position: relative;
+	width: 150;
+	height: 170;
+	background: TAN;
+	border-radius: 60%;
+	margin:auto;
+}
+.eyes.center
+{
+    position: absolute;
+    top: 25%;
+    margin-top: 0px;
+    left: 15%; 
+}
+
+.eye:before{
+    height: 30px;
+    border: 1px solid black;
+    border-color:  transparent transparent  black;
+    border-radius: 15px  0 0 100px;
+    transform: rotate(75deg);
+    position: relative;
+    content: "";
+    display: block;
+    margin-top: -25px;
+	right: 10px;
+}
+.eye
+{
+	margin: auto;
+	width: 10px;
+	height: 10px;
+	background: BLACK;
+	border-radius: 60%;
+	float: left;
+	margin: 10px;
+	border: 10px SOLID RED;
+	box-shadow: 0 0 0 2px white;
+}
+.nose.center::before{
+	position: relative;
+	margin: auto;
+	top: -25;
+	display:block;
+	content: ".";
+	font-size: 50px;
+}
+.nose.center
+{
+	position: relative;
+	width: 25;
+	height: 25;
+	background: #ea7e5d;
+	border-radius: 75% 75% 50% 50%;
+	margin:auto;
+	top: 50%;
+}
+.nose.center::after{
+	position: relative;
+	top:-83px;
+	left:10px;
+	display:block;
+	content: ".";
+	font-size: 50px;
+}
+.mouth.center:before{
+	content:"";
+	display: block;
+	position: relative;
+	top: 95px;
+	left: 40px;
+	height: 30px;
+	width: 60px;
+	border-radius: 0px 30px 130px 130px;
+	background: BLACK;
+	overflow:hidden;
+}
+.mouth.center:after{
+	content:"";
+	display: block;
+	position: relative;
+	top: 85px;
+	left: 55px;
+	height: 9px;
+	width: 30px;
+	border-radius: 130px 130px 30px 30px;
+	background: RED;
+}
+.hair:before{
+	content: "";
+	display: inline;
+	position: absolute;
+	width: 0;
+	height: 0;
+	top:40px;
+	right:20px;
+	border-left: 30px SOLID transparent;
+	border-right: 30px SOLID transparent;
+	border-bottom: 50px SOLID TAN;
+}
+.hair{
+	position: absolute;
+	background: YELLOW;
+	border-radius: 100px 100px 0 0;
+	width: 150px;
+	height: 50px;
+	overflow:hidden;
+}
+.neck{
+	position: absolute;
+	background: TAN;
+	border-radius: 0px 0px 0px 0px;
+	width: 50px;
+	height: 50px;
+	top: 150px;
+	left: 45px;
+}
