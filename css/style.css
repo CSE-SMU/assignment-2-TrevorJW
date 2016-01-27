@@ -1,17 +1,27 @@
 .face.center{
 	position: relative;
 	width: 150;
-	height: 170;
+	height: 200;
 	background: TAN;
-	border-radius: 60%;
+	border-radius: 500px 500px 500px 500px;
 	margin:auto;
+}
+.face.center:after{
+    margin:auto;
+	position: relative;
+	background: RED;
+	border-radius: 10px 10px 10px 10px;
+	width: 70px;
+	height: 50px;
+	top: 400px;
+	
 }
 .eyes.center
 {
     position: absolute;
-    top: 25%;
+    top: 35%;
     margin-top: 0px;
-    left: 15%; 
+    left: 20%; 
 }
 
 .eye:before{
@@ -34,8 +44,8 @@
 	background: BLACK;
 	border-radius: 60%;
 	float: left;
-	margin: 10px;
-	border: 10px SOLID RED;
+	margin: 12px;
+	border: 5px SOLID RED;
 	box-shadow: 0 0 0 2px white;
 }
 .nose.center::before{
@@ -54,7 +64,7 @@
 	background: #ea7e5d;
 	border-radius: 75% 75% 50% 50%;
 	margin:auto;
-	top: 50%;
+	top: 30px;
 }
 .nose.center::after{
 	position: relative;
@@ -68,11 +78,11 @@
 	content:"";
 	display: block;
 	position: relative;
-	top: 95px;
-	left: 40px;
+	margin:auto;
+	top: 50px;
 	height: 30px;
-	width: 60px;
-	border-radius: 0px 30px 130px 130px;
+	width: 80px;
+	border-radius: 0px 0px 130px 130px;
 	background: BLACK;
 	overflow:hidden;
 }
@@ -80,39 +90,42 @@
 	content:"";
 	display: block;
 	position: relative;
-	top: 85px;
-	left: 55px;
+	margin:auto;
 	height: 9px;
 	width: 30px;
-	border-radius: 130px 130px 30px 30px;
+	top: 41px;
+	border-radius: 180px 180px 100px 100px;
 	background: RED;
 }
 .hair:before{
 	content: "";
-	display: inline;
+	display: block;
 	position: absolute;
 	width: 0;
 	height: 0;
-	top:40px;
-	right:20px;
-	border-left: 30px SOLID transparent;
-	border-right: 30px SOLID transparent;
-	border-bottom: 50px SOLID TAN;
+	top:60px;
+	right:10px;
+	border-left: 20px SOLID transparent;
+	border-right: 20px SOLID transparent;
+	border-bottom: 40px SOLID TAN;
 }
 .hair{
-	position: absolute;
+	position: relative;
+	margin: auto;
 	background: YELLOW;
-	border-radius: 100px 100px 0 0;
+	border-radius: 120px 120px 0 0;
 	width: 150px;
-	height: 50px;
+	height: 75px;
+	top: 0px;
 	overflow:hidden;
 }
 .neck{
-	position: absolute;
-	background: TAN;
-	border-radius: 0px 0px 0px 0px;
-	width: 50px;
+    margin:auto;
+	position: relative;
+	background: #ea7e5d;
+	border-radius: 10px 10px 10px 10px;
+	width: 70px;
 	height: 50px;
-	top: 150px;
-	left: 45px;
+	top: 40px;
+	z-index:-1;
 }
